@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="10sp" android:textColor="@color/colorPrimary" android:id="@+id/hint" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/textViewStyle"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/inputLayout" android:background="@drawable/shape_rect" android:layout_width="match_parent" android:layout_height="45dp">
+        <TextView android:textSize="15sp" android:textColor="#d2ddeb" android:gravity="center_vertical" android:id="@+id/naira_text" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="₦" android:layout_marginStart="16dp" app:layout_constraintBottom_toBottomOf="@+id/field" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="@+id/field"/>
+        <EditText android:textSize="15sp" android:textColorHint="@color/input_field_hint_color" android:gravity="center_vertical" android:id="@+id/field" android:tag="inputEditText" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:textCursorDrawable="@drawable/inputfield_cursor" android:layout_marginStart="8dp" style="@style/TextInputEditText"/>
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="13sp" android:textColor="@color/KudiRed" android:layout_gravity="start" android:id="@+id/errorField" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:drawablePadding="10dp" app:drawableStartCompat="@drawable/ic_error_info" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintTop_toBottomOf="@+id/inputLayout"/>
+</LinearLayout>

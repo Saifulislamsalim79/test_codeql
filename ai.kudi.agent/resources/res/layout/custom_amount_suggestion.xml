@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ai.kudi.dip.library.button.KudiTextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center" android:orientation="vertical" android:id="@+id/amount" android:background="@drawable/curved_fill_white_border_grey" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" style="@style/textViewStyle"/>

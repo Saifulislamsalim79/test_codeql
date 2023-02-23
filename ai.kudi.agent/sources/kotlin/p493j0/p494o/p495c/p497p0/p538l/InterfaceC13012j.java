@@ -1,0 +1,11 @@
+package kotlin.p493j0.p494o.p495c.p497p0.p538l;
+/* compiled from: TypeCapabilities.kt */
+/* renamed from: kotlin.j0.o.c.p0.l.j */
+/* loaded from: classes3.dex */
+public interface InterfaceC13012j {
+    /* renamed from: R */
+    AbstractC12965b0 mo5774R(AbstractC12965b0 abstractC12965b0);
+
+    /* renamed from: b */
+    boolean mo5773b();
+}

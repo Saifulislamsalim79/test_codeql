@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/page_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/progress_bar" android:background="@color/page_background" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_gravity="center" android:layout_width="40dp" android:layout_height="40dp"/>
+    </FrameLayout>
+    <androidx.core.widget.NestedScrollView android:paddingTop="@dimen/dimen_30dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:text="@string/how_can_i_be_eligible_for_k_shock_loan" android:fontFamily="@font/garant_semi_bold" style="@style/textViewStyle"/>
+            <androidx.cardview.widget.CardView android:paddingBottom="@dimen/dimen_30dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="@dimen/dimen_30dp" app:cardElevation="0dp">
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/eligibility_criteria_list" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

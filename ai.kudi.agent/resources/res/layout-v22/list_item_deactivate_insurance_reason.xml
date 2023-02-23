@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="20dp">
+    <ImageView android:id="@+id/selection_image_view" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/grey_circular_shape"/>
+    <ai.kudi.dip.library.button.KudiTextView android:layout_gravity="center_vertical" android:id="@+id/reason_text_view" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="15dp" style="@style/textViewStyle"/>
+</LinearLayout>

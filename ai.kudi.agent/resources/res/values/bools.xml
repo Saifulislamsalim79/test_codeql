@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="abc_action_bar_embed_tabs">true</bool>
+    <bool name="abc_config_actionMenuItemAllCaps">true</bool>
+    <bool name="atMostJellyBeanMR2">true</bool>
+    <bool name="atMostKitkat">false</bool>
+    <bool name="intercom_composer_fits_system_windows">false</bool>
+    <bool name="intercom_composer_keyboard_takes_full_screen_in_landscape">true</bool>
+    <bool name="intercom_is_two_pane">false</bool>
+    <bool name="mtrl_btn_textappearance_all_caps">true</bool>
+</resources>

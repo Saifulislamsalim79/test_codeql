@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/white" android:layout_width="match_parent" android:layout_height="?android:attr/actionBarSize">
+    <androidx.appcompat.widget.Toolbar android:layout_width="match_parent" android:layout_height="match_parent" app:contentInsetLeft="0dp" app:contentInsetStart="0dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/back_button" android:paddingTop="21dp" android:paddingBottom="21dp" android:layout_width="60dp" android:layout_height="60dp" android:paddingStart="24dp" android:paddingEnd="24dp" app:srcCompat="@drawable/ic_arrow_backward" app:tint="@color/blackDatePickerTextColor"/>
+            <TextView android:textSize="20sp" android:textStyle="bold" android:textColor="@color/blackDatePickerTextColor" android:ellipsize="end" android:id="@+id/screen_title_text" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/loan_application" android:maxLines="1" android:layout_weight="1" android:layout_marginStart="10dp" style="@style/textViewStyle"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+</com.google.android.material.appbar.AppBarLayout>

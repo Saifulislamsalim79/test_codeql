@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+    <TextView android:textSize="13sp" android:textColor="@color/kudiGray" android:id="@+id/tv_button_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/sofia_pro_regular"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_btn_container" android:background="@drawable/drawable_border" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:animateLayoutChanges="true">
+        <androidx.cardview.widget.CardView android:id="@+id/cardView_image_wrapper" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginStart="16dp" app:cardBackgroundColor="@color/buttonBackground" app:cardCornerRadius="16dp" app:cardElevation="0dp">
+            <ImageView android:layout_gravity="center" android:id="@+id/iv_button_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:maxWidth="32dp" android:maxHeight="32dp" app:srcCompat="@drawable/ic_file_upload_placeholder"/>
+        </androidx.cardview.widget.CardView>
+        <TextView android:textColor="@color/colorPrimary" android:id="@+id/tv_button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/sofia_pro_regular" android:layout_marginStart="8dp"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/ll_uploading_wrapper" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true" android:paddingStart="0dp" android:paddingEnd="16dp" android:layout_marginStart="8dp">
+            <TextView android:textColor="@color/uploadingTextColor" android:ellipsize="end" android:id="@+id/tv_uploading_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="3" android:fontFamily="@font/sofia_pro_regular" android:paddingEnd="8dp"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_change_upload_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="6" android:animateLayoutChanges="true">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_change_image"/>
+                <TextView android:textSize="12sp" android:textColor="@color/changeUploadButton" android:id="@+id/tv_change_upload_btn_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="@font/sofia_pro_medium" android:layout_marginStart="6dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

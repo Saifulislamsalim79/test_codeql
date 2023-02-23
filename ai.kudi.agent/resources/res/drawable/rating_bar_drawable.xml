@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@android:id/background">
+        <bitmap android:tint="?attr/colorControlNormal" app:srcCompat="@drawable/ic_star"/>
+    </item>
+    <item android:id="@android:id/secondaryProgress">
+        <bitmap android:tint="?attr/colorControlActivated" app:srcCompat="@drawable/ic_star"/>
+    </item>
+    <item android:id="@android:id/progress">
+        <bitmap android:tint="?attr/colorControlActivated" app:srcCompat="@drawable/ic_star"/>
+    </item>
+</layer-list>

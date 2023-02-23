@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/userProfile" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginTop="20dp" android:layout_marginStart="16dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:srcCompat="@drawable/ic_notification"/>
+    <TextView android:textSize="6sp" android:textColor="@color/white" android:id="@+id/badgeCount" android:background="@drawable/badge_background" android:paddingLeft="5dp" android:paddingTop="3dp" android:paddingRight="4dp" android:paddingBottom="3dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:layout_marginStart="19dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,45 @@
+package com.google.android.gms.internal.p104firebaseauthapi;
+/* compiled from: com.google.firebase:firebase-auth@@21.0.1 */
+@Deprecated
+/* renamed from: com.google.android.gms.internal.firebase-auth-api.da */
+/* loaded from: classes2.dex */
+public final class C3101da extends AbstractC3251ip<C3101da, C3074ca> implements InterfaceC3010a0 {
+    private static final C3101da zzb;
+    private int zzg;
+    private boolean zzh;
+    private String zze = "";
+    private String zzf = "";
+    private String zzi = "";
+
+    static {
+        C3101da c3101da = new C3101da();
+        zzb = c3101da;
+        AbstractC3251ip.m30951g(C3101da.class, c3101da);
+    }
+
+    private C3101da() {
+    }
+
+    /* JADX INFO: Access modifiers changed from: protected */
+    @Override // com.google.android.gms.internal.p104firebaseauthapi.AbstractC3251ip
+    /* renamed from: j */
+    public final Object mo29964j(int i, Object obj, Object obj2) {
+        int i2 = i - 1;
+        if (i2 != 0) {
+            if (i2 != 2) {
+                if (i2 != 3) {
+                    if (i2 != 4) {
+                        if (i2 != 5) {
+                            return null;
+                        }
+                        return zzb;
+                    }
+                    return new C3074ca(null);
+                }
+                return new C3101da();
+            }
+            return AbstractC3251ip.m30952f(zzb, "\u0000\u0005\u0000\u0000\u0001\u0005\u0005\u0000\u0000\u0000\u0001Ȉ\u0002Ȉ\u0003\u000b\u0004\u0007\u0005Ȉ", new Object[]{"zze", "zzf", "zzg", "zzh", "zzi"});
+        }
+        return (byte) 1;
+    }
+}

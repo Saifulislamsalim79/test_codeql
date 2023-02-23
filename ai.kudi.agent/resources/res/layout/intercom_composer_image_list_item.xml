@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.intercom.input.gallery.adapter.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:custom="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:padding="4dp" android:layout_width="match_parent" android:layout_height="match_parent" custom:intercom_composer_measure_type="1">
+    <ImageView android:id="@+id/thumbnail" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:adjustViewBounds="true"/>
+</com.intercom.input.gallery.adapter.SquareLayout>

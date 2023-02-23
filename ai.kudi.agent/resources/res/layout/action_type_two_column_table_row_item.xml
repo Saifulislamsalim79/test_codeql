@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="50dp">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/action_view" android:background="@drawable/curve_rect_bottom_lightgrey_fill" android:padding="@dimen/dimen_15dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/cancel_image" android:visibility="gone" android:layout_width="15dp" android:layout_height="15dp" app:srcCompat="@drawable/ic_cancel" app:tint="@color/kudiLightBlue"/>
+        <TextView android:textColor="@color/kudiLightBlue" android:id="@+id/action_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/dimen_10dp"/>
+        <ProgressBar android:id="@+id/cancel_loan_progress" android:visibility="gone" android:layout_width="@dimen/dimen_20dp" android:layout_height="@dimen/dimen_20dp" android:layout_marginStart="@dimen/dimen_20dp" style="?android:attr/progressBarStyle"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

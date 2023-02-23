@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#d3c577" android:layout_width="match_parent" android:layout_height="match_parent" android:minWidth="300dp">
+    <TextView android:textSize="16sp" android:textColor="#ffffff" android:id="@+id/textView" android:background="#917c3e" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Select Device"/>
+    <ListView android:id="@+id/listView" android:layout_width="match_parent" android:layout_height="0dp" android:scrollingCache="false" android:layout_weight="0.5"/>
+    <RelativeLayout android:background="#917c3e" android:padding="5dp" android:layout_width="match_parent" android:layout_height="50dp">
+        <Button android:id="@+id/cancel" android:paddingLeft="20dp" android:paddingTop="10dp" android:paddingRight="20dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@android:string/cancel" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</LinearLayout>

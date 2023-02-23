@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/page_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="@color/colorPrimaryDark" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:navigationIcon="@drawable/ic_arrow_backward" app:title="@string/cash_insurance" app:titleTextColor="@color/white"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        <LinearLayout android:orientation="vertical" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textStyle="bold" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/what_s_your_reason_for_deactivation" style="@style/textViewStyle"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/insurance_reasons_list" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <ai.kudi.dip.library.edittext.KudiInputField android:gravity="start" android:id="@+id/insurance_reason_input_field" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" app:KIF_hintText="@string/kindly_type_your_reason_here" app:KIF_inputType="5"/>
+            <ai.kudi.dip.library.button.KudiButton android:id="@+id/insurance_reason_continue_button" android:layout_width="match_parent" android:layout_marginTop="20dp" app:buttonText="@string/continue_text" style="@style/KudiPrimaryButtonEnabled"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

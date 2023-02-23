@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/page_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ai.kudi.dip.library.button.KudiTextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:layout_marginBottom="17dp" android:text="@string/allow_kudi_to_access" android:layout_marginStart="20dp" android:layout_marginEnd="20dp" style="@style/textViewStyle"/>
+            <View android:background="@drawable/transactions_divider" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/app_permissions_recycler_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>

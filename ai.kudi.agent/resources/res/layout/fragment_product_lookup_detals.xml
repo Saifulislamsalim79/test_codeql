@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/productBg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_product_lookup_details" android:background="@drawable/drawable_details_background" android:paddingLeft="8dp" android:paddingTop="16dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="100dp"/>
+    <RelativeLayout android:gravity="bottom" android:layout_gravity="bottom" android:background="@color/white" android:layout_width="match_parent" android:layout_height="80dp">
+        <View android:background="@color/greyBg" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentTop="true"/>
+        <ai.kudi.dip.library.button.KudiButton android:gravity="center" android:id="@+id/tv_proceed_btn" android:layout_width="match_parent" android:layout_height="@dimen/dimen_50dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="8dp" android:height="@dimen/dimen_50dp" android:layout_centerInParent="true" app:buttonText="@string/proceed" style="@style/KudiPrimaryButtonEnabled"/>
+    </RelativeLayout>
+</FrameLayout>

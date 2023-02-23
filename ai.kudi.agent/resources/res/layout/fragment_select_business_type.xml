@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/welcomeText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="4dp" style="@style/onBoardingBoldTextStyle"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" style="@style/onBoardingThinTextStyle"/>
+        <RadioGroup android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ai.kudi.dip.library.button.KudiRadioButton android:textColor="@color/kudiInputFieldHintColor" android:layout_gravity="start" android:id="@+id/merchant_radio_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="@string/merchant_radio_text" android:drawablePadding="15dp" style="@style/onBoardingThinTextStyle"/>
+            <ai.kudi.dip.library.button.KudiRadioButton android:textColor="@color/kudiInputFieldHintColor" android:id="@+id/agent_radio_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="@string/agency_baking_radio_text" android:drawablePadding="15dp" style="@style/onBoardingThinTextStyle"/>
+            <ai.kudi.dip.library.button.KudiRadioButton android:textColor="@color/kudiInputFieldHintColor" android:id="@+id/merchant_agent_radio_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="@string/merchant_agent_radio_text" android:drawablePadding="15dp" style="@style/onBoardingThinTextStyle"/>
+        </RadioGroup>
+        <ai.kudi.dip.library.button.KudiButton android:id="@+id/continue_button" android:layout_width="match_parent" android:layout_height="58dp" app:buttonText="@string/continue_text" style="@style/KudiPrimaryButtonEnabled"/>
+    </LinearLayout>
+</ScrollView>

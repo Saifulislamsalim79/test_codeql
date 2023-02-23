@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/page_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="@color/colorPrimaryDark" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:navigationIcon="@drawable/ic_arrow_backward" app:title="@string/cash_insurance" app:titleTextColor="@color/white"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/screen_content_wrapper" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:gravity="center_horizontal" android:id="@+id/amount_paid_label" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/total_amount_paid" app:layout_constraintTop_toTopOf="0" style="@style/textViewStyle.Light"/>
+            <TextView android:textSize="22sp" android:textStyle="bold" android:id="@+id/amount_paid_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginEnd="30dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/amount_paid_label" style="@style/textViewStyle"/>
+            <TextView android:id="@+id/amount_paid_kobo_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="30dp" app:layout_constraintBottom_toBottomOf="@+id/amount_paid_text" app:layout_constraintStart_toEndOf="@+id/amount_paid_text" app:layout_constraintTop_toTopOf="@+id/amount_paid_text" style="@style/textViewStyle"/>
+            <View android:id="@+id/top_divider" android:background="@color/listDividerColor" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="20dp" app:layout_constraintTop_toBottomOf="@+id/amount_paid_text"/>
+            <ai.kudi.agent.settings.insurance.p026ui.widget.NameValuePairView android:id="@+id/insurance_date_created_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/top_divider" app:nameText="@string/date_created" app:shouldShowDivider="true"/>
+            <ai.kudi.agent.settings.insurance.p026ui.widget.NameValuePairView android:id="@+id/insurance_daily_withdrawal_view" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/insurance_date_created_view" app:nameText="@string/daily_withdrawal"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/employees_wrapper" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/insurance_daily_withdrawal_view"/>
+            <View android:background="@color/listDividerColor" android:layout_width="match_parent" android:layout_height="2dp" app:layout_constraintTop_toBottomOf="@+id/employees_wrapper"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/full_screen_loader" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_width="30dp" android:layout_height="30dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

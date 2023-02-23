@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:layout_marginStart="@dimen/dimen_20dp" android:layout_marginVertical="5dp" app:cardBackgroundColor="@color/white" app:cardCornerRadius="10dp" app:cardElevation="4dp">
+        <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/summary_icon" android:layout_width="43dp" android:layout_height="43dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <TextView android:textSize="8sp" android:id="@+id/summary_label" android:layout_width="0dp" android:layout_height="wrap_content" android:textAllCaps="true" android:layout_marginStart="12dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/summary_icon" app:layout_constraintTop_toTopOf="@+id/summary_icon"/>
+            <TextView android:textSize="16sp" android:textStyle="bold" android:id="@+id/summary_value" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:textAllCaps="true" android:layout_marginStart="12dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/summary_icon" app:layout_constraintTop_toBottomOf="@+id/summary_label" style="@style/textViewStyle.Bold"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

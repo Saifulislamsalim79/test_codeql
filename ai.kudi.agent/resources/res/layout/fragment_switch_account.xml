@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ProgressBar android:layout_gravity="center" android:id="@+id/progressBar5" android:layout_width="match_parent" android:layout_height="wrap_content" style="?android:attr/progressBarStyle"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/layout" android:padding="20dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" style="@style/onBoardingBoldTextStyle"/>
+            <RadioGroup android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ai.kudi.dip.library.button.KudiRadioButton android:textColor="@color/kudiInputFieldHintColor" android:layout_gravity="start" android:id="@+id/merchant_radio_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="@string/merchant_radio_text" android:drawablePadding="15dp" style="@style/onBoardingThinTextStyle"/>
+                <ai.kudi.dip.library.button.KudiRadioButton android:textColor="@color/kudiInputFieldHintColor" android:id="@+id/agent_radio_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="@string/agency_baking_radio_text" android:drawablePadding="15dp" style="@style/onBoardingThinTextStyle"/>
+                <ai.kudi.dip.library.button.KudiRadioButton android:textColor="@color/kudiInputFieldHintColor" android:id="@+id/merchant_agent_radio_button" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="@string/merchant_agent_radio_text" android:drawablePadding="15dp" style="@style/onBoardingThinTextStyle"/>
+            </RadioGroup>
+            <View android:background="@color/list_divider" android:layout_width="match_parent" android:layout_height="1.5dp" android:layout_marginBottom="20dp"/>
+            <ai.kudi.dip.library.edittext.KudiInputField android:id="@+id/specifyPrimaryBusiness" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:KIF_hintText="Specify Primary Business" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/stateField">
+                <ProgressBar android:id="@+id/primaryBusinessProgressBar" android:visibility="gone" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginEnd="@dimen/dimen_20dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" style="?android:attr/progressBarStyle"/>
+            </ai.kudi.dip.library.edittext.KudiInputField>
+            <ai.kudi.dip.library.button.KudiButton android:id="@+id/save_button" android:layout_width="match_parent" android:layout_height="58dp" android:layout_marginTop="20dp" app:buttonText="@string/save" style="@style/KudiPrimaryButtonEnabled"/>
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/constraint_scrolling_container" android:background="@color/productBg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@+id/view_divider" android:background="@drawable/genre_top_stroke_bg" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@+id/recyclerView_product_categories_sector" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        <include android:id="@+id/product_list_header" layout="@layout/layout_list_header"/>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/sr_product_list_wrapper" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@+id/recyclerView_product_categories_list" android:background="@color/productBg" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_no_result_found" android:background="@color/productBg" android:paddingTop="32dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_document"/>
+            <TextView android:textSize="16sp" android:textColor="@color/textTitle" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_not_found_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/no_result_found" android:fontFamily="@font/sofia_pro_semi_bold"/>
+            <TextView android:textSize="13sp" android:textColor="@color/textSubTitle" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_not_found_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:text="@string/swipe_down_to_refresh"/>
+            <TextView android:textStyle="bold" android:textColor="@color/textTitle" android:gravity="center" android:id="@+id/tv_reload_btn" android:background="@drawable/drawable_round_background" android:layout_width="80dp" android:layout_height="@dimen/dimen_50dp" android:layout_marginLeft="16dp" android:layout_marginTop="32dp" android:layout_marginRight="16dp" android:layout_marginBottom="8dp" android:text="Retry" android:height="@dimen/dimen_50dp" android:textAllCaps="false" android:textAlignment="center"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

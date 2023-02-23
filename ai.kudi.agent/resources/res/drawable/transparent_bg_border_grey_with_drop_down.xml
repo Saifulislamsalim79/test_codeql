@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:radius="0dp"/>
+            <stroke android:width="0.5dp" android:color="@color/thickDarKGrey"/>
+        </shape>
+    </item>
+    <item>
+        <bitmap android:gravity="right" android:src="@drawable/outline_expand_more_white_36" android:tint="#ff9e9e9e"/>
+    </item>
+</layer-list>

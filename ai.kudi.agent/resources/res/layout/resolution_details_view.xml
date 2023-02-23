@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView android:layout_width="409dp" android:layout_height="match_parent" app:cardElevation="0dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textColor="@color/blackDatePickerTextColor" android:id="@+id/textView21" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:text="@string/issue_details" android:layout_marginStart="@dimen/dimen_20dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/textViewStyle"/>
+            <View android:id="@+id/view20" android:background="@color/lineDatePickerDivider" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="16dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="1" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/textView21"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerViewIssueDetail" android:padding="@dimen/dimen_10dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/view20"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

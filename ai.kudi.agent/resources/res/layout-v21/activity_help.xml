@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/submitIssueLayout" android:background="@drawable/selectable_action" android:padding="10dp" android:layout_width="0dp" android:layout_height="130dp" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:id="@+id/submitIssueImageView" android:layout_width="52dp" android:layout_height="52dp" app:srcCompat="@drawable/ic_submit_issue"/>
+            <TextView android:textSize="14sp" android:gravity="center" android:layout_gravity="center" android:id="@+id/submitIssueTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="@string/submit_issue" android:fontFamily="@font/garant"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/faqLayout" android:background="@drawable/selectable_action" android:padding="10dp" android:layout_width="0dp" android:layout_height="130dp" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:id="@+id/faqImageView" android:layout_width="52dp" android:layout_height="52dp" app:srcCompat="@drawable/ic_faq"/>
+            <TextView android:textSize="14sp" android:layout_gravity="center" android:id="@+id/faqTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="FAQ" android:fontFamily="@font/garant"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/chatLiveLayout" android:background="@drawable/selectable_action" android:padding="10dp" android:layout_width="0dp" android:layout_height="130dp" android:layout_marginTop="40dp" android:layout_marginBottom="40dp" android:layout_weight="1">
+            <ImageView android:layout_gravity="center" android:id="@+id/liveChatImageView" android:layout_width="52dp" android:layout_height="52dp" app:srcCompat="@drawable/ic_chat"/>
+            <TextView android:textSize="14sp" android:gravity="center" android:layout_gravity="center" android:id="@+id/liveChatTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:text="@string/live_chat" android:fontFamily="@font/garant"/>
+        </LinearLayout>
+    </LinearLayout>
+    <androidx.cardview.widget.CardView android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/card_elevation">
+        <ProgressBar android:layout_gravity="center" android:id="@+id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="25dp"/>
+        <TextView android:textColor="@color/black" android:layout_gravity="center" android:id="@+id/info_text" android:padding="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="25dp"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/help_recyclerview" android:visibility="gone" android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="ifContentScrolls"/>
+    </androidx.cardview.widget.CardView>
+    <com.google.android.material.tabs.TabLayout android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp" app:tabIndicatorColor="@color/colorPrimary" app:tabSelectedTextColor="@color/colorPrimary" app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget">
+        <com.google.android.material.tabs.TabItem android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/call_center"/>
+    </com.google.android.material.tabs.TabLayout>
+</LinearLayout>

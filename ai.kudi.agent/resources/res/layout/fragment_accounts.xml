@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/page_background" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="@color/page_background" android:paddingLeft="20dp" android:paddingTop="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/accountNumbersContainer" android:background="@drawable/shape_rect" android:padding="20dp" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0">
+            <ai.kudi.dip.library.button.KudiTextView android:textSize="14sp" android:id="@+id/accountNumbersContainerTitle" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/bank_accounts" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toTopOf="0" style="@style/textViewStyle.Bold"/>
+            <TextView android:textSize="13sp" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_view_all" android:drawablePadding="@dimen/dimen_15dp" app:drawableEndCompat="@drawable/ic_path" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" style="@style/textViewStyle"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <include android:id="@+id/insurance_container" android:visibility="gone" layout="@layout/view_accounts_insurance"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

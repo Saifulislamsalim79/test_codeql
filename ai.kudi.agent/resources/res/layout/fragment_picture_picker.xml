@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/cl_camera_state" android:background="#223856" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/fl_camera_view" android:layout_width="0dp" android:layout_height="0dp" android:adjustViewBounds="true" android:keepScreenOn="true" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <TextView android:textColor="#ffffff" android:gravity="center" android:id="@+id/tv_prompt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <ImageView android:id="@+id/iv_focus_frame" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0dp" android:layout_margin="@dimen/dimen_40dp" android:contentDescription="focus_frame" app:layout_constraintBottom_toTopOf="@+id/constraintLayout3" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/tv_prompt" app:srcCompat="@drawable/ic_primary_focus"/>
+        <androidx.constraintlayout.widget.ConstraintLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/constraintLayout3" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginBottom="30dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0">
+            <FrameLayout android:id="@+id/fl_rotate_camera" android:background="@drawable/bg_other_btn" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginStart="40dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+                <ImageView android:layout_gravity="center" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginTop="1dp" android:contentDescription="@string/app_name" app:srcCompat="@drawable/ic_switch_camera"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/fl_capture" android:background="@drawable/bg_picker_btn" android:layout_width="70dp" android:layout_height="70dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_cam"/>
+            </FrameLayout>
+            <FrameLayout android:id="@+id/fl_gallery" android:background="@drawable/bg_other_btn" android:visibility="gone" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginEnd="40dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0">
+                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/app_name" app:srcCompat="@drawable/ic_gallery"/>
+            </FrameLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/cl_preview_state" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/iv_selected_image" android:layout_width="0dp" android:layout_height="0dp" android:scaleType="centerCrop" android:adjustViewBounds="true" android:contentDescription="customer_image" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <FrameLayout android:id="@+id/fl_cancel" android:background="@drawable/bg_picker_btn" android:layout_width="70dp" android:layout_height="70dp" android:layout_marginBottom="30dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0">
+            <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_cancel"/>
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

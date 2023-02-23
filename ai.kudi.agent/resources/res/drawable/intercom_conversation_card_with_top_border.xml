@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/intercom_white"/>
+            <corners android:radius="@dimen/intercom_intercom_container_radius"/>
+        </shape>
+    </item>
+    <item android:id="@+id/top_border" android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/intercom_white"/>
+            <corners android:radius="@dimen/intercom_intercom_container_radius"/>
+        </shape>
+    </item>
+    <item android:top="2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/intercom_white"/>
+            <corners android:radius="@dimen/intercom_intercom_container_radius"/>
+            <stroke android:width="1px" android:color="@color/intercom_container_border"/>
+        </shape>
+    </item>
+</layer-list>

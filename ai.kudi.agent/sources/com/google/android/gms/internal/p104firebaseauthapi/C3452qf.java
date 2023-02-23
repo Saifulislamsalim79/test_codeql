@@ -1,0 +1,42 @@
+package com.google.android.gms.internal.p104firebaseauthapi;
+
+import android.os.Parcel;
+import android.os.Parcelable;
+import com.google.android.gms.common.api.Status;
+import com.google.android.gms.common.internal.safeparcel.SafeParcelReader;
+import com.google.firebase.auth.C5206g0;
+/* compiled from: com.google.firebase:firebase-auth@@21.0.1 */
+/* renamed from: com.google.android.gms.internal.firebase-auth-api.qf */
+/* loaded from: classes2.dex */
+public final class C3452qf implements Parcelable.Creator<C3426pf> {
+    @Override // android.os.Parcelable.Creator
+    public final /* bridge */ /* synthetic */ C3426pf createFromParcel(Parcel parcel) {
+        int m31668v = SafeParcelReader.m31668v(parcel);
+        Status status = null;
+        C5206g0 c5206g0 = null;
+        String str = null;
+        String str2 = null;
+        while (parcel.dataPosition() < m31668v) {
+            int m31675o = SafeParcelReader.m31675o(parcel);
+            int m31681i = SafeParcelReader.m31681i(m31675o);
+            if (m31681i == 1) {
+                status = (Status) SafeParcelReader.m31687c(parcel, m31675o, Status.CREATOR);
+            } else if (m31681i == 2) {
+                c5206g0 = (C5206g0) SafeParcelReader.m31687c(parcel, m31675o, C5206g0.CREATOR);
+            } else if (m31681i == 3) {
+                str = SafeParcelReader.m31686d(parcel, m31675o);
+            } else if (m31681i != 4) {
+                SafeParcelReader.m31669u(parcel, m31675o);
+            } else {
+                str2 = SafeParcelReader.m31686d(parcel, m31675o);
+            }
+        }
+        SafeParcelReader.m31682h(parcel, m31668v);
+        return new C3426pf(status, c5206g0, str, str2);
+    }
+
+    @Override // android.os.Parcelable.Creator
+    public final /* bridge */ /* synthetic */ C3426pf[] newArray(int i) {
+        return new C3426pf[i];
+    }
+}

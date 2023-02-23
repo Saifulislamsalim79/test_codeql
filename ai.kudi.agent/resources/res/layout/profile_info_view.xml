@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/shape_rect" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:layout_marginStart="20dp">
+        <TextView android:textSize="14sp" android:id="@+id/textView17" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_information"/>
+        <TextView android:textColor="@color/kudiBadgeDarkGreen" android:id="@+id/profileCompletionTextView" android:background="@color/kudiBadgeLightGreen" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/dimen_10dp" android:paddingEnd="@dimen/dimen_10dp" android:layout_marginEnd="@dimen/dimen_20dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <View android:id="@+id/view6" android:background="#e3e6ee" android:layout_width="wrap_content" android:layout_height="1dp" android:layout_marginTop="14dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/textView17"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+    <TextView android:textSize="13sp" android:layout_gravity="center" android:id="@+id/editProfile" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/edit_profile" android:drawablePadding="@dimen/dimen_8dp" android:textAllCaps="false" app:drawableLeftCompat="@drawable/ic_edit_profile" style="@style/textViewStyle"/>
+</LinearLayout>

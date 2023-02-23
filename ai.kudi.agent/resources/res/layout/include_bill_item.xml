@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <FrameLayout android:orientation="vertical" android:padding="0dp" android:layout_width="110dp" android:layout_height="100dp">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:id="@+id/billers_image_view" android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@string/title_pay_bills"/>
+        <ai.kudi.agent.custom.views.CustomBgTextview android:textSize="12sp" android:textColor="@color/KudiRed" android:gravity="center" android:layout_gravity="bottom" android:id="@+id/availability_indicator" android:paddingLeft="5dp" android:paddingTop="6dp" android:paddingRight="5dp" android:paddingBottom="6dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="12dp" android:text="Unavailable" app:bgColor="@color/kudiBadgeLightRed" app:cornerRadius="3dp" fontPath="fonts/HelveticaNeueMedium.ttf"/>
+    </FrameLayout>
+    <TextView android:textColor="@color/blackDatePickerTextColor" android:layout_gravity="center" android:id="@+id/merchant_text_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp"/>
+</LinearLayout>

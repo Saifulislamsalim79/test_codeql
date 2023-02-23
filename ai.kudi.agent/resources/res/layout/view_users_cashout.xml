@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/profile_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:animateLayoutChanges="true">
+    <Button android:enabled="false" android:textSize="@dimen/standard_text_size" android:layout_gravity="center_horizontal" android:id="@+id/transferToBankButton" android:paddingLeft="25dp" android:paddingRight="25dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:minHeight="35dp" android:text="@string/transfer" android:paddingStart="25dp" android:paddingEnd="25dp" style="@style/StandardButton"/>
+    <RelativeLayout android:background="@android:color/white" android:paddingLeft="30dp" android:paddingTop="5dp" android:paddingRight="30dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp">
+        <com.google.android.material.textfield.TextInputLayout android:textColorHint="@color/grey" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="15sp" android:id="@+id/accountNoEditText" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:hint="@string/account_number" android:maxLines="1" android:maxLength="10" android:inputType="number" android:imeOptions="actionDone"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/choose_bank_layout" android:background="@android:color/white" android:paddingLeft="30dp" android:paddingTop="5dp" android:paddingRight="30dp" android:paddingBottom="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp">
+        <ProgressBar android:id="@+id/accountNameProgressBar" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:layout_below="@+id/chooseBankLayout"/>
+        <TextView android:id="@+id/accountNameTextView" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Oluwadamilohun Makanju" android:layout_below="@+id/chooseBankLayout"/>
+        <com.google.android.material.textfield.TextInputLayout android:textColorHint="@color/grey" android:id="@+id/chooseBankLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="15sp" android:id="@+id/chooseBankEditText" android:paddingTop="10dp" android:focusableInTouchMode="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:hint="Choose Bank" android:cursorVisible="false" android:maxLines="1" android:imeOptions="actionDone"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </RelativeLayout>
+    <RelativeLayout android:background="@android:color/white" android:paddingLeft="30dp" android:paddingTop="5dp" android:paddingRight="30dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout android:textColorHint="@color/grey" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="15sp" android:id="@+id/amountEditText" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:hint="@string/amount" android:maxLines="1" android:inputType="number" android:imeOptions="actionDone"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </RelativeLayout>
+    <TextView android:textSize="16sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="35dp" android:layout_marginTop="30dp" android:layout_marginBottom="10dp" android:text="@string/transfer_to_bank"/>
+</LinearLayout>

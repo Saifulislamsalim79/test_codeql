@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/ll_genre_wrapper" android:background="@drawable/drawable_unselected_gradient" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp">
+    <TextView android:textColor="@color/colorAccent" android:id="@+id/textView_genre" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

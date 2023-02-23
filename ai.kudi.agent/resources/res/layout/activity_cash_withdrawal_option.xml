@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout android:theme="@style/AppTheme.AppBarOverlay" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="@color/white" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:navigationIcon="@drawable/ic_arrow_backward_color_primary" app:popupTheme="@style/AppTheme.PopupOverlay" app:titleTextColor="@color/colorPrimary"/>
+        </com.google.android.material.appbar.AppBarLayout>
+        <FrameLayout android:id="@+id/contentFrameLayout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <include android:id="@+id/loader" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/view_loader"/>
+</FrameLayout>

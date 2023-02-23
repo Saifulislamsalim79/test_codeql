@@ -1,0 +1,44 @@
+package ai.kudi.agent.p036v2.productList.fragment;
+
+import ai.kudi.agent.p036v2.productList.viewModel.ProductListViewModel;
+import p382i.InterfaceC9463a;
+import p472k.p473a.InterfaceC11700a;
+/* renamed from: ai.kudi.agent.v2.productList.fragment.ProductListFragment_MembersInjector */
+/* loaded from: classes.dex */
+public final class ProductListFragment_MembersInjector implements InterfaceC9463a<ProductListFragment> {
+    private final InterfaceC11700a<ProductListViewModel> productListViewModelProvider;
+
+    public ProductListFragment_MembersInjector(InterfaceC11700a interfaceC11700a) {
+        this.productListViewModelProvider = interfaceC11700a;
+    }
+
+    /* JADX WARN: Can't parse signature for local variable: 
+    java.lang.NullPointerException
+     */
+    public static InterfaceC9463a create(InterfaceC11700a interfaceC11700a) {
+        ProductListFragment_MembersInjector $r1 = new ProductListFragment_MembersInjector(interfaceC11700a);
+        return $r1;
+    }
+
+    public static void injectProductListViewModel(ProductListFragment productListFragment, ProductListViewModel productListViewModel) {
+        productListFragment.productListViewModel = productListViewModel;
+    }
+
+    /* JADX WARN: Can't parse signature for local variable: 
+    java.lang.NullPointerException
+     */
+    public void injectMembers(ProductListFragment productListFragment) {
+        InterfaceC11700a $r3 = this.productListViewModelProvider;
+        Object $r2 = $r3.get();
+        ProductListViewModel $r4 = (ProductListViewModel) $r2;
+        injectProductListViewModel(productListFragment, $r4);
+    }
+
+    /* JADX WARN: Can't parse signature for local variable: 
+    java.lang.NullPointerException
+     */
+    public /* bridge */ /* synthetic */ void injectMembers(Object obj) {
+        ProductListFragment $r2 = (ProductListFragment) obj;
+        injectMembers($r2);
+    }
+}

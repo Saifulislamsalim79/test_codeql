@@ -1,0 +1,38 @@
+package com.google.android.gms.internal.p104firebaseauthapi;
+
+import android.os.Binder;
+import android.os.IBinder;
+import android.os.IInterface;
+import android.os.Parcel;
+import android.os.RemoteException;
+/* compiled from: com.google.firebase:firebase-auth@@21.0.1 */
+/* renamed from: com.google.android.gms.internal.firebase-auth-api.o2 */
+/* loaded from: classes2.dex */
+public class BinderC3387o2 extends Binder implements IInterface {
+    /* JADX INFO: Access modifiers changed from: protected */
+    public BinderC3387o2(String str) {
+        attachInterface(this, str);
+    }
+
+    @Override // android.os.IInterface
+    public final IBinder asBinder() {
+        return this;
+    }
+
+    /* renamed from: m */
+    protected boolean mo30461m(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException {
+        throw null;
+    }
+
+    @Override // android.os.Binder
+    public final boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException {
+        if (i > 16777215) {
+            if (super.onTransact(i, parcel, parcel2, i2)) {
+                return true;
+            }
+        } else {
+            parcel.enforceInterface(getInterfaceDescriptor());
+        }
+        return mo30461m(i, parcel, parcel2, i2);
+    }
+}

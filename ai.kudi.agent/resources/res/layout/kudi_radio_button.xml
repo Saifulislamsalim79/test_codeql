@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/shape_rect" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:text="Radio Label" android:drawablePadding="10dp" app:drawableLeftCompat="@drawable/drawable_kudi_radio_button" app:drawableStartCompat="@drawable/drawable_kudi_radio_button" style="@style/textViewStyle"/>

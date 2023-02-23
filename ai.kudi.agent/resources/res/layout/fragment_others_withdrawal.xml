@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/transfer_param_form" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hint_enter_amount" style="@style/BlueEditTextLabel"/>
+        <EditText android:id="@+id/amountEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/hint_enter_amount" android:maxLines="1" android:inputType="number" style="@style/GreyEditText"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/enter_withdrawer_phone_number" style="@style/BlueEditTextLabel"/>
+        <EditText android:id="@+id/phoneNumberEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="0803XXXXXXXX" android:maxLines="1" android:maxLength="11" android:inputType="phone" style="@style/GreyEditText"/>
+        <include android:id="@+id/include_card_methods" android:visibility="visible" layout="@layout/include_card_methods"/>
+        <include android:id="@+id/include_add_service_fee_check" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="15dp" layout="@layout/include_add_service_fee_check"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/serviceFeeLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+            <TextView android:textSize="19sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/service_fee_is"/>
+            <TextView android:textSize="19sp" android:textStyle="bold" android:id="@+id/serviceFeeTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="NGN 300"/>
+        </LinearLayout>
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@+id/serviceFeeProgressBar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <Button android:layout_gravity="center_horizontal" android:id="@+id/performWithdrawalButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/continue_text" style="@style/OnboardingButton"/>
+    </LinearLayout>
+</ScrollView>

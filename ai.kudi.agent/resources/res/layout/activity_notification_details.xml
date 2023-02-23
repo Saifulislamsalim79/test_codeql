@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" app:cardBackgroundColor="@color/lightGrey">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="10dp" android:paddingTop="15dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+            <ai.kudi.dip.library.button.KudiTextView android:textColor="@color/colorPrimaryDark" android:id="@+id/titleTextView" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/textViewStyle.Bold"/>
+            <ai.kudi.dip.library.button.KudiTextView android:id="@+id/notificationTextView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" style="@style/textViewStyle"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>

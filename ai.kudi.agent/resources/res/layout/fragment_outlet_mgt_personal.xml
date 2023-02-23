@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="20dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <include android:id="@+id/loaderView" android:visibility="gone" layout="@layout/list_loader_view"/>
+            <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/filledState" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:textStyle="bold" android:id="@+id/textView12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/profile_information" android:layout_marginStart="20dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/textViewStyle"/>
+                <TextView android:textColor="#10b683" android:id="@+id/statusView" android:background="#e6f8f3" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:paddingStart="10dp" android:paddingEnd="10dp" android:layout_marginEnd="20dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0"/>
+                <TextView android:id="@+id/editProfileView" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/edit_profile" android:drawablePadding="8dp" app:drawableLeftCompat="@drawable/ic_edit" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/outletMgtProfileRv" style="@style/textViewStyle"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/outletMgtProfileRv" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintHorizontal_bias="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/view23"/>
+                <View android:id="@+id/view23" android:background="#f0f4f9" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="16dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/textView12"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </FrameLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

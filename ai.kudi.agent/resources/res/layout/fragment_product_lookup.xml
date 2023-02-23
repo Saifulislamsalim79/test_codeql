@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/productBg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="80dp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_product_lookup_wrapper" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </androidx.core.widget.NestedScrollView>
+    <RelativeLayout android:layout_gravity="bottom" android:background="@color/white" android:layout_width="match_parent" android:layout_height="80dp">
+        <View android:background="@color/greyBg" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentTop="true"/>
+        <ai.kudi.dip.library.button.KudiButton android:textStyle="bold" android:gravity="center" android:id="@+id/tv_proceed_btn" android:layout_width="match_parent" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="8dp" android:layout_centerVertical="true" android:textAllCaps="false" android:textAlignment="center" app:buttonText="@string/proceed" style="@style/KudiPrimaryButtonEnabled"/>
+    </RelativeLayout>
+    <FrameLayout android:layout_gravity="center" android:id="@+id/fl_product_lookup_loader_container" android:background="@drawable/drawable_rounded_rectangle_blue_bg" android:layout_width="80dp" android:layout_height="80dp">
+        <com.gmail.samehadar.iosdialog.CamomileSpinner android:layout_gravity="center" android:id="@+id/iv_product_lookup_loader" android:padding="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:spinnerColor="@color/colorAccent"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/ll_reload_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_reload_btn" android:layout_width="@dimen/dimen_50dp" android:layout_height="@dimen/dimen_50dp" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" app:srcCompat="@drawable/ic_reload"/>
+        <TextView android:textSize="16sp" android:textColor="@color/colorPrimary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/retry" android:fontFamily="@font/garant_light"/>
+    </LinearLayout>
+</FrameLayout>

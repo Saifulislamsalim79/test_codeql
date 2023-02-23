@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#f2f2f2" android:padding="5dp" android:layout_width="70dp" android:layout_height="70dp">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/billers_image_view" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@mipmap/ic_launcher" android:contentDescription="@string/title_pay_bills"/>
+    <TextView android:textSize="18sp" android:textColor="@color/KudiRed" android:ellipsize="end" android:gravity="center" android:layout_gravity="bottom" android:id="@+id/availability_indicator" android:background="@color/kudiBadgeLightRed" android:padding="5dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Offline" android:maxLines="1"/>
+</FrameLayout>

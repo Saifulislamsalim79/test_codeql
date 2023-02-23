@@ -1,0 +1,48 @@
+package com.bumptech.glide.load.p072n;
+
+import android.net.Uri;
+import com.bumptech.glide.load.C2122h;
+import com.bumptech.glide.load.p072n.InterfaceC2199n;
+import java.io.InputStream;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
+/* compiled from: UrlUriLoader.java */
+/* renamed from: com.bumptech.glide.load.n.x */
+/* loaded from: classes2.dex */
+public class C2229x<Data> implements InterfaceC2199n<Uri, Data> {
+
+    /* renamed from: b */
+    private static final Set<String> f6552b = Collections.unmodifiableSet(new HashSet(Arrays.asList("http", "https")));
+
+    /* renamed from: a */
+    private final InterfaceC2199n<C2186g, Data> f6553a;
+
+    /* compiled from: UrlUriLoader.java */
+    /* renamed from: com.bumptech.glide.load.n.x$a */
+    /* loaded from: classes2.dex */
+    public static class C2230a implements InterfaceC2201o<Uri, InputStream> {
+        @Override // com.bumptech.glide.load.p072n.InterfaceC2201o
+        /* renamed from: b */
+        public InterfaceC2199n<Uri, InputStream> mo33496b(C2207r c2207r) {
+            return new C2229x(c2207r.m33540d(C2186g.class, InputStream.class));
+        }
+    }
+
+    public C2229x(InterfaceC2199n<C2186g, Data> interfaceC2199n) {
+        this.f6553a = interfaceC2199n;
+    }
+
+    @Override // com.bumptech.glide.load.p072n.InterfaceC2199n
+    /* renamed from: c */
+    public InterfaceC2199n.C2200a<Data> mo33499b(Uri uri, int i, int i2, C2122h c2122h) {
+        return this.f6553a.mo33499b(new C2186g(uri.toString()), i, i2, c2122h);
+    }
+
+    @Override // com.bumptech.glide.load.p072n.InterfaceC2199n
+    /* renamed from: d */
+    public boolean mo33500a(Uri uri) {
+        return f6552b.contains(uri.getScheme());
+    }
+}

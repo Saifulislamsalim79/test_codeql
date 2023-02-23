@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<defaultsMap>
+    <entry>
+        <key>load_data_subscription
+        </key>
+        <value>true
+        </value>
+    </entry>
+    <entry>
+        <key>start_date_enable_customer_feature
+        </key>
+        <value>2020-01-01 00:00:00
+        </value>
+    </entry>
+    <entry>
+        <key>newly_added_cash_withdrawal_options
+        </key>
+        <value>ussd
+        </value>
+    </entry>
+    <entry>
+        <key>otp_ussd
+        </key>
+        <value>*347*727#
+        </value>
+    </entry>
+    <entry>
+        <key>allowable_number_of_funding_account
+        </key>
+        <value>1
+        </value>
+    </entry>
+    <entry>
+        <key>allowable_number_of_cashout_account
+        </key>
+        <value>1
+        </value>
+    </entry>
+    <entry>
+        <key>enable_ussd_otp
+        </key>
+        <value>false
+        </value>
+    </entry>
+    <entry>
+        <key>enable_ussd_otp_for_onboarding
+        </key>
+        <value>false
+        </value>
+    </entry>
+</defaultsMap>

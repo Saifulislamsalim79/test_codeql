@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/startImage" android:background="@drawable/ic_rectangle_gradient" android:layout_width="55dp" android:layout_height="0dp" android:scaleType="centerInside" app:layout_constraintBottom_toBottomOf="@+id/include" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="@+id/include" app:layout_constraintVertical_bias="0" app:srcCompat="@drawable/ic_big_naira"/>
+    <include android:id="@+id/include" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/startImage" layout="@layout/view_kudi_edittext"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
